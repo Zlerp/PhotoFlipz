@@ -16,3 +16,10 @@ function flipperz3(){
   var randIndex = Math.floor((Math.random() * 119) + 180);
   $('.flashcard:eq('+randIndex+')').toggleClass('flipped');
 }
+
+// Here, the ease animation will be use for the global drawing.
+new Vivus('.tester', {
+    type: 'delayed',
+    duration: 200,
+    animTimingFunction: Vivus.EASE
+}, myCallback);
